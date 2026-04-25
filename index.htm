@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incredible India Trails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="nav">
+      <div class="brand">Incredible India Trails</div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#stats">Impact</a></li>
+        <li><a href="#plan">Plan</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <p class="tagline">Celebrate the Colors of India</p>
+      <h1>Travel India, Build Local Dreams</h1>
+      <p class="sub">
+        Discover iconic and hidden destinations across India while supporting local communities,
+        artisans, culture, and sustainable tourism.
+      </p>
+      <a href="#destinations" class="cta">Explore Destinations</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section destinations" id="destinations">
+      <div class="section-head">
+        <p class="eyebrow">Featured Routes</p>
+        <h2>Handpicked Indian Destinations</h2>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mountain">Mountain</button>
+        <button class="filter-btn" data-filter="heritage">Heritage</button>
+        <button class="filter-btn" data-filter="beach">Beach</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+      </div>
+
+      <div class="card-grid">
+        <article class="card" data-type="mountain">
+          <img src="https://images.unsplash.com/photo-1626621331169-5d3399d3cc4a?auto=format&fit=crop&w=1200&q=80" alt="Snow mountains in Himachal" />
+          <div class="card-content">
+            <h3>Himachal Pradesh</h3>
+            <p>Snowy peaks, pine forests, riverside cafes, and unforgettable mountain drives.</p>
+          </div>
+        </article>
+        <article class="card" data-type="heritage">
+          <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1200&q=80" alt="Hawa Mahal Jaipur" />
+          <div class="card-content">
+            <h3>Jaipur, Rajasthan</h3>
+            <p>Royal palaces, pink city streets, colorful bazaars, and timeless architecture.</p>
+          </div>
+        </article>
+        <article class="card" data-type="beach">
+          <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80" alt="Beach in Goa with palm trees" />
+          <div class="card-content">
+            <h3>Goa Coastline</h3>
+            <p>Golden beaches, Portuguese charm, seafood trails, and vibrant nightlife.</p>
+          </div>
+        </article>
+        <article class="card" data-type="heritage">
+          <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80" alt="Taj Mahal at sunrise" />
+          <div class="card-content">
+            <h3>Agra, Uttar Pradesh</h3>
+            <p>The Taj Mahal and Mughal heritage routes that define India’s historic grandeur.</p>
+          </div>
+        </article>
+        <article class="card" data-type="wildlife">
+          <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?auto=format&fit=crop&w=1200&q=80" alt="Tiger in Ranthambore forest" />
+          <div class="card-content">
+            <h3>Ranthambore</h3>
+            <p>Thrilling tiger safaris, forest lodges, and rich biodiversity encounters.</p>
+          </div>
+        </article>
+        <article class="card" data-type="mountain">
+          <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80" alt="Dal Lake Kashmir houseboats" />
+          <div class="card-content">
+            <h3>Kashmir Valley</h3>
+            <p>Shikara rides, alpine valleys, blooming gardens, and Himalayan serenity.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experiences" id="experiences">
+      <div class="section-head">
+        <p class="eyebrow">What You Gain</p>
+        <h2>Travel With Purpose</h2>
+      </div>
+      <div class="experience-grid">
+        <div class="experience-card">
+          <h3>Local Livelihoods</h3>
+          <p>Choose homestays, local guides, and handmade products to directly support families.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Cultural Stories</h3>
+          <p>From festivals to food trails, each destination opens a window into regional heritage.</p>
+        </div>
+        <div class="experience-card">
+          <h3>Eco-Conscious Trips</h3>
+          <p>Low-impact travel options help preserve landscapes for future generations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats" id="stats">
+      <div class="overlay"></div>
+      <div class="stats-content">
+        <div class="stat">
+          <span class="count" data-target="28">0</span>
+          <p>States & UTs To Explore</p>
+        </div>
+        <div class="stat">
+          <span class="count" data-target="1200">0</span>
+          <p>Heritage Sites & Landmarks</p>
+        </div>
+        <div class="stat">
+          <span class="count" data-target="250">0</span>
+          <p>Wildlife Sanctuaries</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section plan" id="plan">
+      <div class="section-head">
+        <p class="eyebrow">Start Your Journey</p>
+        <h2>Plan Your India Trail</h2>
+      </div>
+      <form class="trip-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <select required>
+          <option value="">Preferred Destination Type</option>
+          <option>Mountain</option>
+          <option>Heritage</option>
+          <option>Beach</option>
+          <option>Wildlife</option>
+        </select>
+        <button type="submit">Request Itinerary</button>
+      </form>
+      <p class="form-note" id="formNote"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made to boost Indian destinations through meaningful travel.</p>
+    <a href="#top">Back to Top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
